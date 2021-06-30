@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    display: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+input {
+    background-color: inherit;
+    outline: none;
+    border: 0;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-top {
+    display: flex;
+    align-items: flex-start;
+}
+
+.flex-btm {
+    display: flex;
+    align-items: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-sp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-sp-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-top-center {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.ellipsis1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ellipsis2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.b {
+    font-weight: bold;
+}
+
+
+/* 动画 */
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all .3s;
+}
+
+
+/* 修改elememt */
+
+
+/* 下拉 */
+
+.el-popper,
+.el-dropdown-menu {
+    margin-top: 0!important;
+}
+
+.el-dropdown .el-icon--right {
+    display: none;
+}
+
+.el-popper .popper__arrow {
+    display: none;
+}
+
+.el-dropdown-menu__item:focus,
+.el-dropdown-menu__item:not(.is-disabled):hover {
+    background-color: initial;
+    color: #0D3DFA;
+}
+
+
+/* .el-dropdown{
+	color:#333;
+} */
+
+
+/* 分页器 */
+
+.el-pagination {
+    text-align: center;
+}
+
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+    background-color: #FFFFFF;
+    color: #666;
+    border: 1px solid #D9DDE2;
+    font-weight: 400;
+    min-width: 32px;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+    color: #666;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #396AFF;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active:hover {
+    color: #fff;
+}
+
+.el-pager li {
+    min-width: 32px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.el-pagination button,
+.el-pagination span:not([class*=suffix]) {
+    height: 32px;
+    line-height: 32px;
+}
+
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .btn-next {
+    padding: 0 12px;
+}
+
+.el-pagination.is-background .btn-next.disabled,
+.el-pagination.is-background .btn-next:disabled,
+.el-pagination.is-background .btn-prev.disabled,
+.el-pagination.is-background .btn-prev:disabled,
+.el-pagination.is-background .el-pager li.disabled {
+    background: #F0F2F4;
+    color: #999;
+    border-color: #fff;
+}
+
+
+/* 锚点清除页面头部高度 */
+
+.header-h {
+    height: 1px;
+    position: relative;
+    top: -100px;
+}
+
+
+/* 陀最小高，防止页面刷新footer缩上去 */
+
+.page-mh {
+    min-height: calc(100vh - 450px);
+}
